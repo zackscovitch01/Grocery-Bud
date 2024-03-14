@@ -5,7 +5,7 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -257,3 +257,94 @@ ul {
 Grocery Bud
 ===============
 */
+
+.section-center {
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  transition: var(--transition);
+  padding: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: var(--fixed-width);
+}
+
+.section-center:hover {
+  box-shadow: var(--shadow-4);
+}
+
+.alert {
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
+
+.grocery-form h4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.grocery-form .form-row {
+  display: flex;
+}
+
+.grocery-form .form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.submit-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+}
+
+.grocery-container {
+  margin-top: 2rem;
+}
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  padding: 0.25rem 1rem;
+  border-radius: var(--borderRadius);
+  text-transform: capitalize;
+  color: var(--grey-700);
+}
+
+.grocery-item:hover {
+  color: var(--grey-500);
+  background: var(--grey-100);
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.edit-btn {
+  color: var(--green-dark);
+}
+
+.delete-btn {
+  color: var(--red-dark);
+}
+
+.clear-btn {
+  color: var(--red-dark);
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: transparent;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  border-color: transparent;
+}
